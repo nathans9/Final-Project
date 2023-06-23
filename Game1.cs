@@ -2096,6 +2096,7 @@ namespace Final_Project
         {
             if (frames % 120 == 0)
             {
+                blast3.Play();
                 Random c = new Random();
                 fireCol = c.Next(0, 16);
                 for (int i = 1; i < 11; i++)
@@ -2127,8 +2128,10 @@ namespace Final_Project
 
         public static void HVLaser(Sensei sensei, Player player)
         {
+
             if (frames % 120 == 0)
             {
+                blast3.Play();
                 Random c = new Random();
                 fireCol = c.Next(0, 16);
                 for (int i = 0; i < 6; i++)
@@ -2179,6 +2182,7 @@ namespace Final_Project
         {
             if (frames % 150 == 0)
             {
+                blast1.Play();
                 Vector2 startingSpeed = Vector2.Transform(Vector2.One, Matrix.CreateRotationZ((float)Math.PI / 30 * timesFired));
                 Random c = new Random();
                 fireCol = c.Next(0, 16);
